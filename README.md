@@ -4,14 +4,17 @@ ESP-IDF
 To compile using ESP-IDF you will need to get the following packages. The command to run depends on ubuntu distribution of Linux you are using:
 
 sudo apt-get install git wget flex bison gperf python3 python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
-
+````
 python --version
 python3 --version
 
-if there is no python install python and python3
+````
 
+if there is no python install python and python3
+````
  sudo apt-get install python
  sudo apt-get install python3
+ ````
  
  To get ESP-IDF, navigate to your installation directory and clone the repository with git clone, following instructions below specific to your operating system.
  
