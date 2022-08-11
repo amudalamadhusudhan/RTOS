@@ -40,6 +40,6 @@ Set up the environment variables
 
 ````
 cd ~/esp/esp-idf
-./export.sh
+. export.sh
 `````
 
