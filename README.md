@@ -49,5 +49,13 @@ dmesg (it show the /dev/ttyUSB0 )
 sudo chmod 777 /dev/ttyUSB0 
 cd ~/esp/esp-idf/examples/get-started/hello_world/
 ls
+to build the project giving below cmd
+open code . and cd main check the  hello_world_main.c after changes go back
+cd ~/esp/esp-idf/examples/get-started/hello_world/
+idf.py to check all commands
+idf.py build (to build the project)
+idf.py flash (to flash program into board)
+idf.py monitor (to check the output serial terminal)
+ctrl ] (to exit the loop)
 
 ````
