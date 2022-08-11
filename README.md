@@ -17,20 +17,23 @@ if there is no python install python and python3
  ````
  
  To get ESP-IDF, navigate to your installation directory and clone the repository with git clone, following instructions below specific to your operating system.
- 
+ ````
  mkdir -p ~/esp
  cd ~/esp
  git clone --recursive https://github.com/espressif/esp-idf.git
+ ````
 
 Aside from the ESP-IDF, you also need to install the tools used by ESP-IDF, such as the compiler, debugger, Python packages, etc, for projects supporting ESP32.
-
+````
   cd ~/esp/esp-idf
   ./install.sh esp32
   /install.sh esp32,esp32s2
+  ````
 
 In order to install tools for all supported targets please run the following command:
-
+````
 cd ~/esp/esp-idf
 ./install.sh all
+````
 
 
