@@ -42,4 +42,12 @@ Set up the environment variables
 cd ~/esp/esp-idf
 . export.sh
 `````
+Now you are ready to prepare your application for ESP32. You can start with get-started/hello_world project from examples directory in ESP-IDF.
+Connect Your Device
+```
+dmesg (it show the /dev/ttyUSB0 )
+sudo chmod 777 /dev/ttyUSB0 
+cd ~/esp/esp-idf/examples/get-started/hello_world/
+ls
 
+````
