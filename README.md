@@ -33,7 +33,13 @@ Aside from the ESP-IDF, you also need to install the tools used by ESP-IDF, such
 In order to install tools for all supported targets please run the following command:
 ````
 cd ~/esp/esp-idf
-./install.sh all
+./install.sh all (or)
+./intall.sh 
 ````
+Set up the environment variables
 
+````
+cd ~/esp/esp-idf
+./export.sh
+`````
 
