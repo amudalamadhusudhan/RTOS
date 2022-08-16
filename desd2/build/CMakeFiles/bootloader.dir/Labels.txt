@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/CMakeFiles/bootloader
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/CMakeFiles/bootloader.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/CMakeFiles/bootloader-complete.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
