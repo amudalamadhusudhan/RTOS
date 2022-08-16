@@ -1,4 +1,4 @@
-# Install script for directory: /home/madhusudhan/esp/esp-idf/examples/get-started/desd/main
+# Install script for directory: /home/madhusudhan/esp/esp-idf/examples/get-started/RTOS/desd/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
