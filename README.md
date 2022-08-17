@@ -60,3 +60,22 @@ idf.py monitor (to check the output serial terminal)
 ctrl ] (to exit the loop)
 
 ````
+creating own project example
+````
+cd ~/esp/esp-idf
+. export.sh
+cd ~/esp/esp-idf/examples/get-started
+mkdir desd
+cd desd 
+mkdir main
+cd main 
+copy the  CMakelist.txt file from helloworld->main file
+and create your own file.c file inside the main save it include the file.c name in the Cmakelist file
+cd ..
+again create onther  CMakefile.txt in desd folder copy the make file from the helloworld file 
+the final file are required to build project " desd->CMakefile.txt,main->file.c,CMakefile.txt"
+inside desd console give idf.py menuconfig -> enable freertos clock tick hz 
+idf.py Build 
+idf.py flash
+idf.py -p /dev/ttyUSB0 monitor
+```
