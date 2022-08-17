@@ -78,4 +78,5 @@ inside desd console give idf.py menuconfig -> enable freertos clock tick hz
 idf.py Build 
 idf.py flash
 idf.py -p /dev/ttyUSB0 monitor
-```
+
+`````
