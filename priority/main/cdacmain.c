@@ -16,8 +16,9 @@ void serial_task(void *data)
 void app_main()
 {
     BaseType_t res;
-
-    printf("MT rtos project\n");
+    UBaseType_t priom;
+    priom = uxTaskPriorityGet(serial_task_handle);
+    printf("MT rtos project %d\n", priom);
     // pthread_t sid;
     // pthread_create(&sid, NULL, serial_task, NULL);
     // pthread_join(sid, NULL);
