@@ -70,7 +70,7 @@ cd desd
 mkdir main
 cd main 
 copy the  CMakelist.txt file from helloworld->main file
-and create your own file.c file inside the main save it include the file.c name in the Cmakelist file
+and create your own file.c file inside the main save it.mention the file name in the Cmakelist file
 cd ..
 again create onther  CMakefile.txt in desd folder copy the make file from the helloworld file 
 the final file are required to build project " desd->CMakefile.txt,main->file.c,CMakefile.txt"
