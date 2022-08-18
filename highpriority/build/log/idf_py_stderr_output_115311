@@ -1,6 +1,0 @@
-[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
-[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
-[0;33m0x40080400: _init at ??:?
-[0m
-[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is a0b74fcaf901ea5e5835d686db1f4930f2ae1ac999d9801f8de8e16c76be627a[0m
-[0m
