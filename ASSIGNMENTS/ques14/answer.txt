@@ -1,0 +1,3 @@
+14. Find the tick frequency configuration for your RTOS.
+
+Answer: the tick frequency configuration for your RTOS is 100hz

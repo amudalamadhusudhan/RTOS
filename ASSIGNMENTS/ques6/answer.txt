@@ -1,0 +1,5 @@
+6. What are the maximum number of tasks that can be created on the RTOS you are using? Is it limited by the RTOS design or underlying hardware resources or both.
+
+
+
+Answer: configTOTAL_HEAP_SIZE api is help for maximum number of tasks can be created on the RTOS.

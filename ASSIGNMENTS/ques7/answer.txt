@@ -1,0 +1,3 @@
+7.What is the scheduling algorithm used by your RTOS?
+
+Answer:  Currently, the most used algorithms in practical RTOS are non-preemptive scheduling, round-robin scheduling, and preemptive priority scheduling.

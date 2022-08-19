@@ -1,0 +1,4 @@
+10. Draw a process or task state diagram for the RTOS you are using.
+
+
+Answer:  

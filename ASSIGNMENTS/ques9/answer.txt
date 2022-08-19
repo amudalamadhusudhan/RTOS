@@ -1,0 +1,6 @@
+9.Find the fields that are maintained in the Task Control Block / Process Control Block of the RTOS you are using.
+
+
+Answer:  CPU Registers–Register set where process needs to be stored for execution for running state. 
+        CPU Scheduling Information–information scheduling CPU time. Memory Management Information–page table, memory limits, segment table. 
+        Accounting Information–amount of CPU used for process execution, time limits, execution ID etc
