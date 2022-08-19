@@ -5,8 +5,9 @@ TaskHandle_t serial_task_handle;
 void serial_task(void *data)
 {
     printf("serial task started\n");
-    xTaskDelete(serial_task_handle);
+    //xTaskDelete(serial_task_handle);
 }
+
 void app_main()
 {
     BaseType_t res;
