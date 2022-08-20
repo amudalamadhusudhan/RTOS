@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS'
+make: Leaving directory '/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
