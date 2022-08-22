@@ -45,7 +45,7 @@ void processing_task3(void *data)
       //recive  the data to the 
       xQueueReceive(sensor_q,&buffer,portMAX_DELAY);
       printf("processing received data %d\n",buffer);
-      vTaskDelay(pdMS_TO_TICKS(1000));
+      //vTaskDelay(pdMS_TO_TICKS(1000));
      }
       vTaskDelete(NULL);
 }
@@ -60,7 +60,7 @@ void highprio_task4(void *data)
       //recive  the data to the 
       xQueueReceive(sensor_q,&buffer,pdMS_TO_TICKS(1000));
       printf("highprio received data %d\n",buffer);
-      vTaskDelay(pdMS_TO_TICKS(1000));
+      //vTaskDelay(pdMS_TO_TICKS(1000));
       count++;
       if(count>50)
     {
