@@ -2,39 +2,73 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "pthread.h"
-#include "freertos/timers.h"
-#include "freertos/message_buffer.h"
-
-TaskHandle_t task1handle,task2handle, task3handle, task4handle;
-StreamBufferHandle_t sb_t1_t2;
-
-void task1(void *data)
+#include "freertos/queue.h"
+#define MQ_SIZE 4
+#define MSG_SIZE 64
+TaskHandle_t pressure_task1handle,temperature_task2handle,processing_task3handle,highprio_task4handle;
+QueueHandle_t sensor_q;
+void pressure_task1(void *data)
 {
-  printf("task1 sarting the task1\n");
-  printf("task1 sending message\n");
-  //while(1)
-  //{
-  xStreamBufferSend(sb_t1_t2,"madhusudhan1\n",13,pdMS_TO_TICKS(20000));
-  xStreamBufferSend(sb_t1_t2,"madhusudhan2\n",13,pdMS_TO_TICKS(20000));
-  xStreamBufferSend(sb_t1_t2,"madhusudhan3\n",13,pdMS_TO_TICKS(20000));
-  printf("task1 finished sending the message\n");
-  //}
-  vTaskDelete(NULL);
-}
-void task2(void *data)
-{
-  unsigned char rbuff[200];
-  size_t nbytes=0;
-  printf("task2 sarting the task2\n");
-  while(1)
-  {
-  printf("task2 requesting for data to be received\n");
-  nbytes=xStreamBufferReceive(sb_t1_t2,rbuff,200,pdMS_TO_TICKS(20000));
-  printf("task2 recived the data and size %s %d\n",rbuff,nbytes);
-  }
-  vTaskDelete(NULL);
+   int pdata=200;
+   printf("pressure_task1 sarting the pressure_task1\n");
+   while(1)
+    {
+    pdata++;
+    //send the data to the queue
+    xQueueSend(sensor_q,&pdata,pdMS_TO_TICKS(5000));
+    vTaskDelay(pdMS_TO_TICKS(100));
+    }
+   printf("pressure_task1 sending message\n");
+   printf("pressure_task1 finished sending the message\n");
+   vTaskDelete(NULL);
 }
 
+void temperature_task2(void *data)
+{
+    int tdata=100; 
+    printf("temparature_task1 sarting the temparature_task1\n");
+    while(1)
+    { 
+     tdata++;
+     //send the data to the queue
+     xQueueSend(sensor_q,&tdata,pdMS_TO_TICKS(5000));
+     vTaskDelay(pdMS_TO_TICKS(100));
+     }
+      vTaskDelete(NULL);
+}
+void processing_task3(void *data)
+{
+   int buffer;
+    printf("processing_task3 sarting the processing_task3\n");
+    while(1)
+    { 
+      //recive  the data to the 
+      xQueueReceive(sensor_q,&buffer,portMAX_DELAY);
+      printf("processing received data %d\n",buffer);
+      vTaskDelay(pdMS_TO_TICKS(1000));
+     }
+      vTaskDelete(NULL);
+}
+
+void highprio_task4(void *data)
+{
+   int buffer;
+    printf("highprio_task sarting the highprio_task3\n");
+    int count =0;
+    while(1)
+    { 
+      //recive  the data to the 
+      xQueueReceive(sensor_q,&buffer,pdMS_TO_TICKS(1000));
+      printf("highprio received data %d\n",buffer);
+      vTaskDelay(pdMS_TO_TICKS(1000));
+      count++;
+      if(count>50)
+    {
+      vTaskDelay(pdMS_TO_TICKS(10000));
+    }
+     }
+      vTaskDelete(NULL);
+}
 
 void app_main()
 {
@@ -43,7 +77,9 @@ void app_main()
   printf("MT rtos project \n");
   priom = uxTaskPriorityGet(NULL);
   printf("MT task created sucessfully prio %d\n", priom);
-  sb_t1_t2= xStreamBufferCreate(200,25);
-  res = xTaskCreate(task1, "TASK1", 2048, NULL, 8, &task1handle);
-  res = xTaskCreate(task2, "TASK2", 2048, NULL, 8, &task2handle);
+  sensor_q=xQueueCreate( MQ_SIZE,MSG_SIZE);
+  res = xTaskCreate(pressure_task1, "pressure_TASK1", 2048, NULL, 8, &pressure_task1handle);
+  res = xTaskCreate(temperature_task2, "temperature_TASK2", 2048, NULL, 8, &temperature_task2handle);
+  res = xTaskCreate(processing_task3, "processing_TASK3", 2048, NULL, 8, &processing_task3handle);
+  res = xTaskCreate(highprio_task4, "highprio_TASK4", 2048, NULL, 10, &highprio_task4handle);
 }
