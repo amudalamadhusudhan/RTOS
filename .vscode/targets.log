@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug 19 23:02:49 2022
+# Make data base, printed on Mon Aug 22 11:56:24 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:37688
+JOURNAL_STREAM = 8:39019
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -59,11 +59,11 @@ USERNAME = madhusudhan
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=1f2fe701cb534e87f01c219d62fe78df
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=2955fdce5ec9e3b51161589163030cba
 # environment
 _ = /usr/bin/code
 # environment
-MANAGERPID = 1525
+MANAGERPID = 1494
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -75,7 +75,7 @@ PATH = /home/madhusudhan/Downloads/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linu
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/madhusudhan:@/tmp/.ICE-unix/1782,unix/madhusudhan:/tmp/.ICE-unix/1782
+SESSION_MANAGER = local/madhusudhan:@/tmp/.ICE-unix/1753,unix/madhusudhan:/tmp/.ICE-unix/1753
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -83,7 +83,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = ca27e98c0d4f41abb609512067d65a92
+INVOCATION_ID = ab877594df764b9daf65ce35cf533b71
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -101,7 +101,7 @@ PWD = /home/madhusudhan/esp/esp-idf/examples/get-started/RTOS
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1736
+SSH_AGENT_PID = 1706
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -185,12 +185,13 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0c27f058_0040_4e57_b83f_192be3b12f6a
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/06b3cd6c_9c97_41ab_a26f_42b7a6d59441
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.1009
+GNOME_TERMINAL_SERVICE = :1.102
 # default
+ 
 SUFFIXES := 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
@@ -205,9 +206,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 67174
+VSCODE_PID = 4144
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1f2fe701cb534e87f01c219d62fe78df
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=2955fdce5ec9e3b51161589163030cba
 # variable set hash-table stats:
 # Load=98/1024=10%, Rehash=0, Collisions=13/120=11%
 
@@ -217,9 +218,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1f2fe701cb534e87f01c219
 
 # Directories
 
-# . (device 2053, inode 8915438): 17 files, no impossibilities.
+# . (device 2053, inode 8915438): 20 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -231,6 +232,7 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1f2fe701cb534e87f01c219
 all:
 #  Command line target.
 #  Implicit rule search has been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 
@@ -269,12 +271,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 245 B / avg = 9 B
-# current buf: size = 8162 B / used = 245 B / count = 25 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 291 B / avg = 10 B
+# current buf: size = 8162 B / used = 291 B / count = 28 / avg = 10 B
 
-# strcache performance: lookups = 28 / hit rate = 10%
+# strcache performance: lookups = 31 / hit rate = 9%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=1/28=4%
-# Finished Make data base on Fri Aug 19 23:02:49 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Mon Aug 22 11:56:24 2022
 
  

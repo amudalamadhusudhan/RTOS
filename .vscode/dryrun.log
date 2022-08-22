@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS'
 make: Leaving directory '/home/madhusudhan/esp/esp-idf/examples/get-started/RTOS'
  
